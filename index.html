@@ -53,7 +53,6 @@ function draw_name() { // function declaraction
 function draw_image() { // function declaration
 	var find_canvas_c = document.getElementById("canvas"); // finds <canvas> element in DOM
 	var context_c = find_canvas_c.getContext("2d"); // drawing context
-	var img = new Image(); // creates new image element
 	var img = document.getElementById("bevo")
 	context_c.drawImage(img, 10, 10);
 	}
@@ -93,6 +92,7 @@ function reset() { // function declaration
 <div id="content" class="w3-container">
 	<p>Content</p> <!--canvas-->
 	<canvas id="canvas" width="300" height="225" style="border:1px solid #000000;"></canvas> <!--canvas-->
+	<img id="bevo" src="bevo.jpg" alt="Bevo" width="220" height="277">
 	<div id="content" class="w3-container"> <!--beginning of division (content)-->
 		<a onclick="draw_rectangle();" class="w3-btn w3-black">Draw rectangle</a> <!--button to draw rectangle-->
 		<a onclick="draw_name();" class="w3-btn w3-black">Draw name</a> <!--button to draw name-->
