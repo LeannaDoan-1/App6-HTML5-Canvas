@@ -53,7 +53,7 @@ function draw_name() { // function declaraction
 function draw_image() { // function declaration
 	var find_canvas_c = document.getElementById("canvas"); // finds <canvas> element in DOM
 	var context_c = find_canvas_c.getContext("2d"); // drawing context
-	var img = document.getElementById("bevo")
+	var img = new Image();
 	img.src = "bevo.png"; // image source
 	context_c.drawImage(img, 10, 10, 10, 10);
 	}
