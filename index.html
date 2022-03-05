@@ -36,8 +36,8 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 
 <script>
 var docMod = document.lastModified; // loads last modified time stamp into docMod variable
-	alert("This file last modified " + docMod); // generates alert box with time stamp. If annoying, comment out this entire line.
-	console.log("This file last modified " + docMod); // generates message in javaScript console (found in developers tools) with time stamp. 
+alert("This file last modified " + docMod); // generates alert box with time stamp. If annoying, comment out this entire line.
+console.log("This file last modified " + docMod); // generates message in javaScript console (found in developers tools) with time stamp. 
 function draw_rectangle() { // function declaraction
 	var find_canvas_a = document.getElementById("canvas"); //finds <canvas> element in DOM
 	var context_a = find_canvas_a.getContext("2d"); // drawing context
@@ -50,11 +50,6 @@ function draw_name() { // function declaraction
 	context_b.font = "bold 12px sans-serif";
 	context_b.fillText("Leanna Doan", 100, 43);
 	}
-function draw_image() //function declaration
-	var find_canvas_c = document.getElementById("canvas"); //finds <canvas> element in DOM
-	var context_c = find_canvas_c.getContext("2d"); // drawing context
-	var img = document.getElementById("scream");
-	ctx.drawImage(img, 10, 10);
 function reset() { // function declaration
 	var find_canvas_d = document.getElementById("canvas"); //finds <canvas> element in DOM
 	find_canvas_d.width = find_canvas_d.width;
