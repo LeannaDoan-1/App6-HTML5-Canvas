@@ -39,14 +39,14 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	alert("This file last modified " + docMod); // generates alert box with time stamp. If annoying, comment out this entire line.
 	console.log("This file last modified " + docMod); // generates message in javaScript console (found in developers tools) with time stamp. 
 	function draw_rectangle() { // function declaraction
-		var find_canvas = document.getElementById("canvas"); // finds <canvas> element in DOM
-		var context = find_canvas.getContext("2d"); // drawing context
+		var find_canvas1 = document.getElementById("canvas"); // finds <canvas> element in DOM
+		var context1 = find_canvas1.getContext("2d"); // drawing context
 		context.fillRect(50, 25, 150, 100); // defines properties (x, y, width, height) of and draws rectangle
 		context.fillStyle // specifies color used inside shape
 		}
 	function draw_name() { // function declaration
-		var find_canvas = document.getElementById("canvas"); // finds <canvas> element in DOM
-		var context = find_canvas.getContext("2d"); // drawing context
+		var find_canvas2 = document.getElementById("canvas"); // finds <canvas> element in DOM
+		var context2 = find_canvas2.getContext("2d"); // drawing context
 		context.font = "bold 12px sans-serif"; // font size and style
 		context.fillText("Leanna Doan", 248, 43); // draws text
 		
