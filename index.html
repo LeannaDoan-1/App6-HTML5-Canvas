@@ -54,7 +54,8 @@ function draw_image() { // function declaration
 	var find_canvas_c = document.getElementById("canvas"); // finds <canvas> element in DOM
 	var context_c = find_canvas_c.getContext("2d"); // drawing context
 	var img = document.getElementById("bevo")
-	context_c.drawImage(img, 10, 10);
+	img.src = "bevo.png"; // image source
+	context_c.drawImage(img, 10, 10, 10, 10);
 	}
 function reset() { // function declaration
 	var find_canvas_d = document.getElementById("canvas"); // finds <canvas> element in DOM
