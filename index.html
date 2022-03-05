@@ -41,8 +41,8 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 function draw_rectangle() { // function declaraction
 	var find_canvas_a = document.getElementById("canvas"); // finds <canvas> element in DOM
 	var context_a = find_canvas_a.getContext("2d"); // drawing context
-	context_a.fillRect(50, 25, 150, 100); //defines properties (x, y, width, height) of and draws rectangle
-	context_a.fillStyle //specifies color used inside shape
+	context_a.fillRect(50, 25, 150, 100); // defines properties (x, y, width, height) of and draws rectangle
+	context_a.fillStyle // specifies color used inside shape
 	}
 function draw_name() { // function declaraction
 	var find_canvas_b = document.getElementById("canvas"); // finds <canvas> element in DOM
@@ -55,7 +55,7 @@ function draw_image() { // function declaration
 	var context_c = find_canvas_c.getContext("2d"); // drawing context
 	var img = new Image();
 	img.src = "bevo.png"; // image source
-	context_c.drawImage(img, 10, 10, 10, 10);
+	context_c.drawImage(img, 50, 50, 50, 50); // image dimensions
 	}
 function reset() { // function declaration
 	var find_canvas_d = document.getElementById("canvas"); // finds <canvas> element in DOM
