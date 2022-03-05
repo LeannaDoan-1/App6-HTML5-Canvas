@@ -1,5 +1,5 @@
 <!DOCTYPE html> 
-<html> 
+<html> <!--beginning of HTML file-->
 <!-- The following code has been developed by students and/or researchers of the Freshman Research Initiative DIY Diagnostics Stream at The University of Texas at Austin.  This code is shared for demonstration purposes and should not be considered a product -- it is for entertainment purposes only.  Any user of this code does so at their own risk. Members of the DIY Stream, FRI, and The University of Texas system are not liable for anything related to this code.
  
 THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION.
@@ -25,16 +25,16 @@ https://www.w3schools.com/w3css/default.asp
 https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-file
 -->
 	
-<head> 
-	<title>App6---HTML5-Canvas</title>  
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="apple-mobile-web-app-capable" content="yes">
-	<link rel="stylesheet" href="w3.css">
-	<link rel="stylesheet" href="w3-colors-flat.css">
-</head> 
+<head>  <!--beginning of header section-->
+	<title>App6---HTML5-Canvas</title> <!--title-->
+	<meta name="viewport" content="width=device-width, initial-scale=1"> <!--information about page that is not intended to be displayed-->
+	<meta name="apple-mobile-web-app-capable" content="yes"> <!--information about page that is not intended to be displayed-->
+	<link rel="stylesheet" href="w3.css"> <!--information about web-related aspects of app; reasonable display size-->
+	<link rel="stylesheet" href="w3-colors-flat.css"> <!--information about web-related aspects of app; signals to smartphones that they should allow user to save shortcut on homepage-->
+</head>  <!--end of header section-->
 
 
-<script>
+<script> // beginning of JavaScript section
 	var docMod = document.lastModified; // loads last modified time stamp into docMod variable
 	alert("This file last modified " + docMod); // generates alert box with time stamp. If annoying, comment out this entire line.
 	console.log("This file last modified " + docMod); // generates message in javaScript console (found in developers tools) with time stamp. 
@@ -44,26 +44,26 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 		context_a.fillRect(50, 25, 150, 100); // defines properties (x, y, width, height) of and draws rectangle
 		context_a.fillStyle // specifies color used inside shape
 		}
-	function draw_name() { // function declaraction
+	function draw_name() { // draw_name function declaraction
 		var find_canvas_b = document.getElementById("canvas"); // finds <canvas> element in DOM
 		var context_b = find_canvas_b.getContext("2d"); // drawing context
-		context_b.font = "bold 12px sans-serif";
-		context_b.fillText("Leanna Doan", 100, 43);
+		context_b.font = "bold 12px sans-serif"; // defines text font
+		context_b.fillText("Leanna Doan", 100, 43); // defines properties of and draws text 
 		}
 	function draw_image() { // function declaration
 		var find_canvas_c = document.getElementById("canvas"); // finds <canvas> element in DOM
 		var context_c = find_canvas_c.getContext("2d"); // drawing context
-		var img = new Image();
+		var img = new Image(); // creates new img element
 		img.src = "bevo.png"; // image source
-		context_c.drawImage(img, 50, 50, 50, 50); // image dimensions
+		context_c.drawImage(img, 50, 50, 50, 50); // defines properties of and draws image
 		}
 	function reset() { // function declaration
 		var find_canvas_d = document.getElementById("canvas"); // finds <canvas> element in DOM
-		find_canvas_d.width = find_canvas_d.width;
+		find_canvas_d.width = find_canvas_d.width; // sets width of <canvas> element to its current value; resets properties of drawing context to default values
 		}
-</script>
+</script> <!--end of JavaScript section-->
 
-<style>	
+<style>	/*beginning of CSS section*/
 	.body {
 		margin: 0em;
 	}
@@ -81,15 +81,15 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 		left: 0vw;
 		z-index: 1;
 	}
-</style>
+</style> <!--end of CSS section-->
 
-<body>
-	<div id="header" class="w3-container w3-flat-carrot">
-		<h1>App6---HTML5-Canvas</h1>
-	</div>
+<body> <!--beginning of body-->
+	<div id="header" class="w3-container w3-flat-carrot"> <!--beginning of division (header)-->
+		<h1>App6---HTML5-Canvas</h1> <!--most important heading-->
+	</div> <!--end of division (header)-->
 
-	<div id="content" class="w3-container">
-		<br>
+	<div id="content" class="w3-container"> <!--beginning of division (content)-->
+		<br> <!--break-->
 		<canvas id="canvas" width="300" height="225" style="border:1px solid #000000;"></canvas> <!--canvas-->
 		<div id="content" class="w3-container"> <!--beginning of division (content)-->
 			<a onclick="draw_rectangle();" class="w3-btn w3-black">Draw rectangle</a> <!--button to draw rectangle-->
@@ -98,14 +98,14 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 			<a onclick="reset();" class="w3-btn w3-black">Reset canvas</a> <!--button to reset canvas-->
 		</div> <!--end of division (content)-->
 
-		<p>The following code has been developed by students and/or researchers of the Freshman Research Initiative DIY Diagnostics Stream at The University of Texas at 		Austin.  This code is shared for demonstration purposes and should not be considered a product -- it is for entertainment purposes only. Any user of this code 			does so at their own risk. Members of the DIY Stream, FRI, and The University of Texas system are not liable for anything related to this code.</p>
+		<p>The following code has been developed by students and/or researchers of the Freshman Research Initiative DIY Diagnostics Stream at The University of Texas at 		Austin.  This code is shared for demonstration purposes and should not be considered a product -- it is for entertainment purposes only. Any user of this code 			does so at their own risk. Members of the DIY Stream, FRI, and The University of Texas system are not liable for anything related to this code.</p> <!--text on page-->
 
-		<p>THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION.</p>
-	</div>
+		<p>THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION.</p> <!--text on page-->
+	</div> </div> <!--end of division (content)-->
 
-<footer class="w3-bottom w3-container w3-flat-carrot">
-	<p>DIY!</p>
-</footer>
+<footer class="w3-bottom w3-container w3-flat-carrot"> <!--beginning of footer-->
+	<p>DIY!</p> <!--text in footer-->
+</footer> <!--end of footer-->
 
-</body>
-</html>
+</body> <!--end of body-->
+</html> <!--end of HTML file-->
