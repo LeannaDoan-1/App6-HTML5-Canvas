@@ -44,6 +44,12 @@ function draw_rectangle() { // function declaraction
   context_a.fillRect(50, 25, 150, 100); //defines properties (x, y, width, height) of and draws rectangle
   context_a.fillStyle //specifies color used inside shape
 }
+function draw_name() { // function declaraction
+  var find_canvas_b = document.getElementById("canvas"); //finds <canvas> element in DOM
+  var context_b = find_canvas_b.getContext("2d"); // drawing context
+context_b.font = "bold 12px sans-serif";
+context_b.fillText("Leanna Doan, 248, 43");
+}
 </script>
 
 
