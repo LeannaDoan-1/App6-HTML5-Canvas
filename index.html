@@ -25,84 +25,82 @@ https://www.w3schools.com/w3css/default.asp
 https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-file
 -->
 	
-   <head> 
-      <title>App6---HTML5-Canvas</title>  
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <meta name="apple-mobile-web-app-capable" content="yes">
-      <link rel="stylesheet" href="w3.css">
-      <link rel="stylesheet" href="w3-colors-flat.css">
-   </head> 
+<head> 
+	<title>App6---HTML5-Canvas</title>  
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<link rel="stylesheet" href="w3.css">
+	<link rel="stylesheet" href="w3-colors-flat.css">
+</head> 
 
 
 <script>
-var docMod = document.lastModified; // loads last modified time stamp into docMod variable
-alert("This file last modified " + docMod); // generates alert box with time stamp. If annoying, comment out this entire line.
-console.log("This file last modified " + docMod); // generates message in javaScript console (found in developers tools) with time stamp. 
-function draw_rectangle() { // function declaraction
-	var find_canvas_a = document.getElementById("canvas"); // finds <canvas> element in DOM
-	var context_a = find_canvas_a.getContext("2d"); // drawing context
-	context_a.fillRect(50, 25, 150, 100); // defines properties (x, y, width, height) of and draws rectangle
-	context_a.fillStyle // specifies color used inside shape
-	}
-function draw_name() { // function declaraction
-	var find_canvas_b = document.getElementById("canvas"); // finds <canvas> element in DOM
-	var context_b = find_canvas_b.getContext("2d"); // drawing context
-	context_b.font = "bold 12px sans-serif";
-	context_b.fillText("Leanna Doan", 100, 43);
-	}
-function draw_image() { // function declaration
-	var find_canvas_c = document.getElementById("canvas"); // finds <canvas> element in DOM
-	var context_c = find_canvas_c.getContext("2d"); // drawing context
-	var img = new Image();
-	img.src = "bevo.png"; // image source
-	context_c.drawImage(img, 50, 50, 50, 50); // image dimensions
-	}
-function reset() { // function declaration
-	var find_canvas_d = document.getElementById("canvas"); // finds <canvas> element in DOM
-	find_canvas_d.width = find_canvas_d.width;
-	}
+	var docMod = document.lastModified; // loads last modified time stamp into docMod variable
+	alert("This file last modified " + docMod); // generates alert box with time stamp. If annoying, comment out this entire line.
+	console.log("This file last modified " + docMod); // generates message in javaScript console (found in developers tools) with time stamp. 
+	function draw_rectangle() { // function declaraction
+		var find_canvas_a = document.getElementById("canvas"); // finds <canvas> element in DOM
+		var context_a = find_canvas_a.getContext("2d"); // drawing context
+		context_a.fillRect(50, 25, 150, 100); // defines properties (x, y, width, height) of and draws rectangle
+		context_a.fillStyle // specifies color used inside shape
+		}
+	function draw_name() { // function declaraction
+		var find_canvas_b = document.getElementById("canvas"); // finds <canvas> element in DOM
+		var context_b = find_canvas_b.getContext("2d"); // drawing context
+		context_b.font = "bold 12px sans-serif";
+		context_b.fillText("Leanna Doan", 100, 43);
+		}
+	function draw_image() { // function declaration
+		var find_canvas_c = document.getElementById("canvas"); // finds <canvas> element in DOM
+		var context_c = find_canvas_c.getContext("2d"); // drawing context
+		var img = new Image();
+		img.src = "bevo.png"; // image source
+		context_c.drawImage(img, 50, 50, 50, 50); // image dimensions
+		}
+	function reset() { // function declaration
+		var find_canvas_d = document.getElementById("canvas"); // finds <canvas> element in DOM
+		find_canvas_d.width = find_canvas_d.width;
+		}
 </script>
 
-
-
 <style>	
-.body {
-     margin: 0em;
-}
-.page {
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    left: -100vw;
-    overflow-y: auto;
-    z-index: 0;
-    background-color: hsl(0,0%,100%);
-}
-  .page:target {
-    left: 0vw;
-    z-index: 1;
-}
+	.body {
+		margin: 0em;
+	}
+	.page {
+		width: 100vw;
+		height: 100vh;
+		position: fixed;
+		top: 0;
+		left: -100vw;
+		overflow-y: auto;
+		z-index: 0;
+		background-color: hsl(0,0%,100%);
+	}
+	.page:target {
+		left: 0vw;
+		z-index: 1;
+	}
 </style>
 
 <body>
-<div id="header" class="w3-container w3-flat-carrot">
-	<h1>App6---HTML5-Canvas</h1>
-</div>
-	
-<div id="content" class="w3-container">
-	<br>
-	<canvas id="canvas" width="300" height="225" style="border:1px solid #000000;"></canvas> <!--canvas-->
-	<div id="content" class="w3-container"> <!--beginning of division (content)-->
-		<a onclick="draw_rectangle();" class="w3-btn w3-black">Draw rectangle</a> <!--button to draw rectangle-->
-		<a onclick="draw_name();" class="w3-btn w3-black">Draw name</a> <!--button to draw name-->
-		<a onclick="draw_image();" class="w3-btn w3-black">Draw image</a> <!--button to draw image-->
-		<a onclick="reset();" class="w3-btn w3-black">Reset canvas</a> <!--button to reset canvas-->
-	</div> <!--end of division (content)-->
-		
-	<p>The following code has been developed by students and/or researchers of the Freshman Research Initiative DIY Diagnostics Stream at The University of Texas at 		Austin.  This code is shared for demonstration purposes and should not be considered a product -- it is for entertainment purposes only. Any user of this code 			does so at their own risk. Members of the DIY Stream, FRI, and The University of Texas system are not liable for anything related to this code.</p>
- 	
-	<p>THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION.</p>
+	<div id="header" class="w3-container w3-flat-carrot">
+		<h1>App6---HTML5-Canvas</h1>
+	</div>
+
+	<div id="content" class="w3-container">
+		<br>
+		<canvas id="canvas" width="300" height="225" style="border:1px solid #000000;"></canvas> <!--canvas-->
+		<div id="content" class="w3-container"> <!--beginning of division (content)-->
+			<a onclick="draw_rectangle();" class="w3-btn w3-black">Draw rectangle</a> <!--button to draw rectangle-->
+			<a onclick="draw_name();" class="w3-btn w3-black">Draw name</a> <!--button to draw name-->
+			<a onclick="draw_image();" class="w3-btn w3-black">Draw image</a> <!--button to draw image-->
+			<a onclick="reset();" class="w3-btn w3-black">Reset canvas</a> <!--button to reset canvas-->
+		</div> <!--end of division (content)-->
+
+		<p>The following code has been developed by students and/or researchers of the Freshman Research Initiative DIY Diagnostics Stream at The University of Texas at 		Austin.  This code is shared for demonstration purposes and should not be considered a product -- it is for entertainment purposes only. Any user of this code 			does so at their own risk. Members of the DIY Stream, FRI, and The University of Texas system are not liable for anything related to this code.</p>
+
+		<p>THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION.</p>
 
 <footer class="w3-bottom w3-container w3-flat-carrot">
 	<p>DIY!</p>
